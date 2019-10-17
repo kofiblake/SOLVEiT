@@ -60,10 +60,10 @@
     !A = 48*pi*0.0583*8.854E-12/1460    ! Values for Busek's liquid
 
     ! Specify the q/m distribution according to the number of peaks defined above, the emission
-    qms0 = (/3.8e4,2e4/)   ! peak position (q/m)
+    qms0 = (/8.63e5,3.08e5/)   ! peak position (q/m)
     dwidth = (/1.,1./)     ! peak width (including potential distribution) from TOF data
     is = (/263.,263./)     ! current in nA for each species
-    V = (/1618.,1618./)    ! Accelerating potentials (Busek's)        
+    V = (/1000.,1000./)    ! Accelerating potentials (Busek's)        
     Vin = (/300.,300./)    ! Potentials at injection point
 
     
@@ -129,7 +129,7 @@
     
     t_dist = 0.
     !t_dist = t_dist + t_amp*exp(-((t_range-tau)/t_dwidth)**2)     !compute Gaussian curves for fragmentation times
-    t_dist = exp(-t_range/tau)
+    t_dist = exp(-t_range/tau)/tau
     
     call cumsum(tpeaks,t_dist,t_distc)  !compute cumulative time sum
     
