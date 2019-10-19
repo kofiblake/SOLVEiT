@@ -1,10 +1,10 @@
  Results from running the Colloid PIC code
   
  MEMO:                                                                                                                                                                                                         
- Started:            10 /          17 /        2019   at            13 :           9 :           0
- Finished:           10 /          17 /        2019   at            13 :          12 :          43
+ Started:            10 /          18 /        2019   at            11 :           3 :          38
+ Finished:           10 /          18 /        2019   at            11 :           8 :           2
   
- Elapsed time for calculation:           0 hrs,           3 min,          43 sec
+ Elapsed time for calculation:           0 hrs,           4 min,          24 sec
   
  Accelerating voltage =   1000.00000       1000.00000      V
  Dgz =   1.99999995E-04  m

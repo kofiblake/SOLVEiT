@@ -10,7 +10,7 @@
     ! is naturally accumulated close to the axis where it should be
     ! npeaks is the number of different q/m families
 	
-    integer, parameter::X=75,Y=75,Z=24,npmax=300000,mpeaks=20000,npeaks=2,tpeaks=2000
+    integer, parameter::X=75,Y=75,Z=24,npmax=300000,mpeaks=200000,npeaks=2,tpeaks=2000
     ! define all the program local variables
 	real, dimension(npmax,3)::posx,posy,posz,velx,vely,velz,q_m,tfrag
     real, dimension(npmax)::colli,cx,cy,Exps,Eyps,Ezps
@@ -60,6 +60,7 @@
     !A = 48*pi*0.0583*8.854E-12/1460    ! Values for Busek's liquid
 
     ! Specify the q/m distribution according to the number of peaks defined above, the emission
+    !qms0 = (/3.8e4,2e4/)
     qms0 = (/8.63e5,3.08e5/)   ! peak position (q/m)
     dwidth = (/1.,1./)     ! peak width (including potential distribution) from TOF data
     is = (/263.,263./)     ! current in nA for each species
